@@ -1,2 +1,2 @@
-# Standford-Curso-de-Python
-Curso de Stanford de Python
+# Standford-Course
+Course Python (Standford)
