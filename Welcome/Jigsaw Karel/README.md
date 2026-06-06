@@ -16,49 +16,6 @@ Karel has almost completed a beeper puzzle inside a walled grid. The last piece 
 2. Paste the code below
 3. Click the **Run** button
 
-## Code
-
-```python
-from karel.stanfordkarel import *
-
-def turn_right():
-    turn_left()
-    turn_left()
-    turn_left()
-
-def pick_up_piece():
-    move()         # move to column 2 where beeper is
-    pick_beeper()  # pick it up
-
-def place_piece():
-    turn_left()    # face north
-    move()         # row 2
-    move()         # row 3
-    turn_right()   # face east
-    move()         # column 3
-    move()         # column 4
-    put_beeper()   # place the puzzle piece
-
-def return_home():
-    turn_right()   # face south
-    move()         # row 2
-    move()         # row 1
-    turn_right()   # face west
-    move()         # column 3
-    move()         # column 2
-    move()         # column 1 (home)
-    turn_right()   # face east again
-
-def main():
-    """
-    Karel picks up the last puzzle piece, places it in the
-    correct spot, and returns to the starting position.
-    """
-    pick_up_piece()
-    place_piece()
-    return_home()
-```
-
 ## Expected Result
 
 After running the program, the puzzle grid is fully filled with beepers and Karel is back at the bottom-left corner facing East.
