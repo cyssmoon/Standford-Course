@@ -34,30 +34,6 @@ The final world looks like this:
 
 ---
 
-## 💻 Solution
-
-```python
-from karel.stanfordkarel import *
-
-def main():
-    for i in range(20):
-        put_beeper()
-    move()  
-
-    for i in range(26):
-        put_beeper()
-    move() 
-
-def turn_right():
-    for _ in range(3):
-        turn_left()
-
-if __name__ == '__main__':
-    main()
-```
-
----
-
 ## ▶️ How to Run
 
 Make sure you have the Stanford Karel library installed, then run:
