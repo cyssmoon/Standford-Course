@@ -16,17 +16,6 @@ Karel starts facing east in a grid world. There is a beeper placed one step ahea
 2. Paste the code below
 3. Click the **Run** button
 
-## Code
-
-```python
-from karel.stanfordkarel import *
-
-def main():
-    move()
-    pick_beeper()
-    move()
-```
-
 ## Expected Result
 
 After running the program, Karel will have moved two positions to the right and the beeper will be gone from the grid (Karel picked it up).
