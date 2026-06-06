@@ -40,17 +40,13 @@ The final world looks like this:
 from karel.stanfordkarel import *
 
 def main():
-    # Place 20 beepers at the starting position
     for i in range(20):
         put_beeper()
+    move()  
 
-    move()  # Move one step to the right
-
-    # Place 26 beepers at the new position
     for i in range(26):
         put_beeper()
-
-    move()  # Move one more step to the right
+    move() 
 
 def turn_right():
     for _ in range(3):
