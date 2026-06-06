@@ -16,29 +16,6 @@ Karel starts in the corner of her house, facing east. A beeper (representing foo
 2. Paste the code below
 3. Click the **Run** button
 
-## Code
-
-```python
-from karel.stanfordkarel import *
-
-def turn_around():
-    turn_left()
-    turn_left()
-
-def move_to_beeper():
-    move()
-
-def return_home():
-    turn_around()
-    move()
-    turn_around()
-
-def main():
-    move_to_beeper()
-    pick_beeper()
-    return_home()
-```
-
 ## Expected Result
 
 After running the program, Karel will be back in her starting corner inside the house, and the beeper will be gone (Karel picked it up).
