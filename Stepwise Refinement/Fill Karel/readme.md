@@ -14,11 +14,13 @@
 
 For example, consider Karel's starting **5×5 world**. When complete, it should look like this:
 
-<div align="center">
-<img src="assets/assignment-1.png" alt="5x5 world filled with beepers" width="420"/>
-</div>
-
-<br>
+```
+◆   ◆   ◆   ◆   ◆
+◆   ◆   ◆   ◆   ◆
+◆   ◆   ◆   ◆   ◆
+◆   ◆   ◆   ◆   ◆
+◆   ◆   ◆   ◆   K→   (K = Karel, facing right)
+```
 
 > ⚠️ **Karel's final position matters.**
 > Karel should end in the **top-right corner, facing right**.
@@ -26,9 +28,13 @@ For example, consider Karel's starting **5×5 world**. When complete, it should 
 
 Your code needs to work on **more than just a 5×5 world**. For example, if you run your solution on a **3×4 world**:
 
-<div align="center">
-<img src="assets/assignment-2.png" alt="3x4 world example and result filled with beepers" width="420"/>
-</div>
+```
+Before                  After
+
++   +   +   +           ◆   ◆   ◆   ◆
++   +   +   +     →      ◆   ◆   ◆   ◆
+K→  +   +   +           ◆   ◆   ◆   K→
+```
 
 The result should still be a world completely filled with beepers.
 
